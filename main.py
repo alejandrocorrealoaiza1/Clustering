@@ -12,7 +12,6 @@ shuffle=True,
 random_state=1,
 )
 
-
 #PLOT
 plt.scatter(X[:, 0], X[:, 1], c=y)
 plt.show()
