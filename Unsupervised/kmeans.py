@@ -38,4 +38,5 @@ class KMeans:
     def _calc_distances(self, X):
         distances = np.zeros((X.shape[0], self.n_clusters))
         for i, centroid in enumerate(self.centroids):
-            distances[:, i]
+            distances[:, i] = np.linalg.norm(X - centroid, axis=1)
+        return distances
